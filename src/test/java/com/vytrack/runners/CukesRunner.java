@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         // TRUE will not execute cucumber code, But FALSE will execute the code!
        // tags = "@driver  and  @smoke"
         // tags = " @driver  or   @login"
-        tags = "@navigate"
+        tags = "@wip"
 
 
 )
