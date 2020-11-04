@@ -75,11 +75,19 @@ Assert.assertEquals( "Dashboard", actualTitle);
     public void the_title_contains(String expectedTitle) {
 
         System.out.println("expectedTitle = " + expectedTitle);
-        BrowserUtils.waitFor(2);
+        BrowserUtils.waitFor(3);
 Assert.assertTrue(Driver.get().getTitle().contains(expectedTitle) );
 
     }
 
+    @Given("the user logged in as {string}")
+    public void the_user_logged_in_as(String usertype) {
+
+        System.out.println("usertype = "+usertype);
+        String user= ConfigurationReader.get("usertype");
+
+
+    }
 
 
 }
