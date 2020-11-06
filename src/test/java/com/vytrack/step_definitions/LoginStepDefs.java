@@ -80,14 +80,42 @@ Assert.assertTrue(Driver.get().getTitle().contains(expectedTitle) );
 
     }
 
-    @Given("the user logged in as {string}")
-    public void the_user_logged_in_as(String usertype) {
 
-        System.out.println("usertype = "+usertype);
-        String user= ConfigurationReader.get("usertype");
-
-
-    }
+//      // homework
+//    @Given("the user logged in as {string}")
+//    public void the_user_logged_in_as(String usertype) {
+//// go to login page
+//Driver.get().get(ConfigurationReader.get("url"));
+//
+//        System.out.println("usertype = "+usertype);
+//
+////based on input enter that user information
+//   String username = null;
+//   String password = null;
+//
+//   BrowserUtils.waitFor(2);
+//
+//   if(usertype.equals("driver")){
+//       username=ConfigurationReader.get("driver_username");
+//       password=ConfigurationReader.get("driver_password");
+//
+//   }else if(usertype.equals("sales_manager")){
+//       username=ConfigurationReader.get("sales_manager_username");
+//       password=ConfigurationReader.get("sales_manager_password");
+//
+//   }else if(usertype.equals("store_manager")){
+//       username=ConfigurationReader.get("store_manager_username");
+//       password=ConfigurationReader.get("store_manager_password");
+//   }
+//
+//
+//// send username and password and login
+//
+//        new LoginPage().login(username, password);
+//
+//
+//
+//    }
 
 
 }

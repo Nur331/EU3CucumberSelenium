@@ -10,12 +10,12 @@ Feature:  Login as different users
 
 
 #homework
-
-  Scenario: login as a driver
-    Given the user logged in as "driver"
+#@wip
+  Scenario: login as a usertype
+    Given the user logged in as "store_manager"
     When the user should be able to login
     Then the title contains "Dashboard"
-    #Logged in as driver, salesmanager, storemanager
+    #Logged in as driver, sale_smanager, store_manager
   #you will have one step definition and it will handle different usertype
 
 
