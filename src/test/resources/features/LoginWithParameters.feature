@@ -10,7 +10,7 @@ Feature:  Login as different users
 
 
 #homework
-#@wip
+
   Scenario: login as a usertype
     Given the user logged in as "store_manager"
     When the user should be able to login
