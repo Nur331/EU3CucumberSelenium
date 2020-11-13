@@ -1,6 +1,6 @@
 
 Feature: Account Type
-  @wip
+  @wip  @smoke
   Scenario: Driver user
     Given the user logged in as "driver"
     When the user navigates to "Activities" "Calendar Events"
@@ -10,11 +10,11 @@ Feature: Account Type
       Given the user logged in as "sales manager"
       When the user navigates to "Customers" "Accounts"
       Then the title contains "Accounts - Customers"
-  @wip
+  @wip  @smoke
   Scenario: Store manager user
         Given the user logged in as "store manager"
         When the user navigates to "Customers" "Contacts"
-        Then the title contains "Contacts - Customers"
+        Then the title contains "All - Contacts - Customers"
 
 #+++++++++++++++++  simple way below: D D T (Data Driven Testing ) in Cucumber  +++++++++++
 

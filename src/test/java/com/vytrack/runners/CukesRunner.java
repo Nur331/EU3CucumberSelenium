@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
     dryRun = false,
     // TRUE will not execute cucumber code, But FALSE will execute the code!
     // tags = "@driver  and  @smoke"// tags = " @driver  or   @login"
-    tags = "@wip"
+    tags = "@smoke"
 
 )
  public class CukesRunner {
