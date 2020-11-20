@@ -7,6 +7,8 @@ import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
+import java.util.concurrent.TimeUnit;
+
 
 public class Hooks {
 
@@ -14,6 +16,8 @@ public class Hooks {
  public void setUp(){
 
      System.out.println("\tthis is coming from BEFORE");
+     Driver.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+     Driver.get().manage().window().maximize();
  }
 
 
@@ -31,6 +35,7 @@ final byte[]  screenshot = ((TakesScreenshot) Driver.get()).getScreenshotAs(Outp
     }
 
 
+// costume hooks
  @Before("@db")
  public void setUpdb(){
 

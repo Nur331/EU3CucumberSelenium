@@ -14,6 +14,7 @@ import org.junit.runner.RunWith;
     features = "src/test/resources/features",
     glue="com/vytrack/step_definitions",
     dryRun = false,
+    // to get step definition we use dryRun=true
     // TRUE will not execute cucumber code, But FALSE will execute the code!
     // tags = "@driver  and  @smoke"// tags = " @driver  or   @login"
     tags = "@smoke"
@@ -23,3 +24,8 @@ import org.junit.runner.RunWith;
 
 
 }
+
+
+
+
+

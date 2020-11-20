@@ -32,7 +32,7 @@ public class LoginStepDefs  {
     @Then("the user should be able to login")
     public void the_user_should_be_able_to_login() {
 
-        BrowserUtils.waitFor(3);
+        BrowserUtils.waitFor(5);
 
 String actualTitle=Driver.get().getTitle();
 Assert.assertEquals( "Dashboard", actualTitle);
@@ -74,10 +74,11 @@ Assert.assertEquals( "Dashboard", actualTitle);
     @Then("the title contains {string}")
     public void the_title_contains(String expectedTitle) {
 
+        BrowserUtils.waitFor(5);
+
         System.out.println("expectedTitle = " + expectedTitle);
         System.out.println("actualTitle = " + Driver.get().getTitle());
 
-        BrowserUtils.waitFor(3);
 Assert.assertTrue(Driver.get().getTitle().contains(expectedTitle) );
 
     }
